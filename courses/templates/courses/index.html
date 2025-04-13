@@ -57,7 +57,7 @@
                     <td>{{ t.title }}</td>
                     <td>{{ t.description }}</td>
                     <td>{{ t.duration }}</td>
-                    <td><img src="{{ t.thumbnail.url }}" width="150" height="100"></td>
+                    <td><img src="{{ course.get_thumbnail_url }}" width="150" height="100" alt="{{ course.title }} thumbnail"></td>
                     <td><a class="btn btn-success" href="{{ t.id }}/">Course Detail</a></td>
                 </tr>
                 {% endfor %}
